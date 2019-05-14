@@ -1,3 +1,11 @@
+//@import url(stylesheets/bootstrap.min.css);
+//@import url(stylesheets/flacto/components.css);
+//@import url(stylesheets/flacto/core.css);
+//@import url(stylesheets/flacto/icons.css);
+//@import url(stylesheets/flacto/menu.css);
+//@import url(stylesheets/flacto/pages.css);
+//@import url(stylesheets/flacto/responsive.css);
+//@import url(stylesheets/flacto/variables.css);
 .modal-background {
   background-color: rgba(71, 72, 83, 0.77);
   position: fixed;
@@ -32,10 +40,8 @@
   top: 20px;
   right: 20px;
   z-index: 1101; }
-
 .modal-close:hover {
   opacity: 1; }
-
 .modal-close:focus {
   outline: none; }
 
@@ -47,7 +53,6 @@
   padding: 60px;
   text-align: center;
   width: 520px; }
-
 .modal-success h2 {
   font-size: em(42); }
 
@@ -59,12 +64,10 @@ body {
   margin: 0;
   padding: 0;
   background: white; }
-
 body ul {
   list-style: none;
   padding: 0;
   margin: 0; }
-
 body a, body a:hover {
   cursor: pointer;
   color: inherit; }
@@ -77,7 +80,6 @@ textarea {
 
 .text-link {
   color: #2b7bb9; }
-
 .text-link:hover {
   text-decoration: underline;
   color: #2b7bb9; }
@@ -283,10 +285,8 @@ textarea {
 .adjacent {
   display: inline-block;
   vertical-align: middle; }
-
 .adjacent.top-aligned {
   vertical-align: top; }
-
 .adjacent.bottom-aligned {
   vertical-align: bottom; }
 
@@ -325,19 +325,14 @@ textarea {
 
 .flexbox {
   display: flex; }
-
 .flexbox.justify-space-between {
   justify-content: space-between; }
-
 .flexbox.justify-space-around {
   justify-content: space-around; }
-
 .flexbox.align-items-center {
   align-items: center; }
-
 .flexbox.align-self-center {
   align-items: center; }
-
 .flexbox .flex-shrink-none {
   flex-shrink: 0; }
 
@@ -860,6 +855,7 @@ textarea {
 .video-react .video-react-fullscreen-control.video-react-icon-fullscreen.video-react-icon {
   position: absolute;
   right: 0; }
+
 
 .video-react .video-react-fullscreen-control.video-react-icon-fullscreen-exit.video-react-icon {
   position: absolute;

@@ -5,7 +5,6 @@ import React, { Component }     from 'react';
 export default class Layout extends Component {
 
   render() {
-    console.log('MATCH', this.props);
     return (
         <div style={{
           maxWidth: '1080px',

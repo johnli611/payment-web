@@ -37,24 +37,26 @@ class CheckoutForm extends Component {
     };
 
     return (
-      <div className="checkout" style={{background: 'white'}}>
-        <p>
+      <div style={{background: 'white'}}>
+        <p style={{marginBottom: '40px'}}>
           Please enter your payment information to start your subscription. You'll be charged monthly starting today.
         </p>
 
-        <CardElement className="m-t-25 p-t-20" style={style} />
+        <CardElement style={style} />
 
         <p className="m-t-10" style={{color: '#fa755a', height: '20px'}}>
           {this.state.shouldShowInvalidCardError && 'Invalid card information'}
         </p>
 
-        <Button
-          variant="outline-info"
-          onClick={this.submit}
-          style={{marginTop: '25px'}}
-        >
-          Submit
-        </Button>
+        <div style={{display: 'flex', justifyContent: 'flex-end'}}>
+          <Button
+            variant="outline-info"
+            onClick={this.submit}
+            style={{marginTop: '25px'}}
+          >
+            Submit
+          </Button>
+        </div>
       </div>
     );
   }
@@ -85,8 +87,8 @@ class CheckoutForm extends Component {
       body: JSON.stringify(this.constructSubscriptionData(stripeToken))
     };
 
-    // return fetch('http://localhost:3000/subscribe', paymentData)
-    return fetch('https://sunrise-dev.herokuapp.com/subscribe', paymentData)
+    return fetch('http://localhost:3000/subscribe', paymentData)
+    // return fetch('https://sunrise-dev.herokuapp.com/subscribe', paymentData)
       .then(response => response.json())
       .then((responseJSON) => console.log(responseJSON));
   }

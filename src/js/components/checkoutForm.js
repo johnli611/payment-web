@@ -87,8 +87,8 @@ class CheckoutForm extends Component {
       body: JSON.stringify(this.constructSubscriptionData(stripeToken))
     };
 
-    return fetch('http://localhost:3000/subscribe', paymentData)
-    // return fetch('https://sunrise-dev.herokuapp.com/subscribe', paymentData)
+    // return fetch('http://localhost:3000/subscribe', paymentData)
+    return fetch('https://sunrise-dev.herokuapp.com/subscribe', paymentData)
       .then(response => response.json())
       .then((responseJSON) => console.log(responseJSON));
   }
